@@ -103,6 +103,7 @@ jobs:
             sleep 10
     integration-test:
         needs: dev-deploy
-        uses: kk-lab-3\github-actions-solar-system\.github\workflows\reusable-workflow.yml
+        uses: dolapo-fad/repo/.github/workflows/reusable-workflow.yml@feature/workflow
         with:
+
           ingress-url: ${{ needs.dev-deploy.outputs.APP_INGRESS_URL }}
