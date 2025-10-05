@@ -105,6 +105,6 @@ jobs:
         needs: dev-deploy
         uses: ./.github/workflows/reusable-workflow.yml
         with:
-
           ingress-url: ${{ needs.dev-deploy.outputs.APP_INGRESS_URL }}
+
 
